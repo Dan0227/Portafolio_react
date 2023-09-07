@@ -19,9 +19,9 @@ const Encabezado = () => {
             <a className="texthe" href="https://www.amazon.com/-/es/Frank-Herbert/dp/849759682X" target="_blank">LIBRO</a>
           </div>
         </th>
-        <th>
+        <th>a
           <div className="ml2">
-            <a className="texthe" href="https://github.com/Dan0227  " target="_blank">PORTAFOLIO</a>
+            <a className="texthe" href="https://github.com/Dan0227?tab=repositories" target="_blank">PORTAFOLIO</a>
           </div>
         </th>
           <div>

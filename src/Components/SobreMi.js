@@ -1,10 +1,11 @@
 import React from 'react';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
+import './Inicio.css'
 
 function SobreMi() {
   return (
-    <div>
+    <div className="inicio-container">
       <Typography variant="h4" gutterBottom>
         Acerca De Mí
       </Typography>

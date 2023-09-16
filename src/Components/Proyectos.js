@@ -1,44 +1,68 @@
-import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import React, { useState, useEffect } from "react";
+import './Proyectos.css'
 
-const proyectos = [
+const proyectosData = [
   {
-    id: 1,
-    titulo: 'Proyecto 1',
-    descripcion: 'Descripción del Proyecto 1',
-    imagen: 'imagen1.jpg',
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Biblioteca-montserrat.jpg/1200px-Biblioteca-montserrat.jpg",
+    descripcion: "El CRUD para una biblioteca",
+    repoUrl: "https://github.com/Dan0227/Libreria_crud_F"
   },
   {
-    id: 2,
-    titulo: 'Proyecto 2',
-    descripcion: 'Descripción del Proyecto 2',
-    imagen: 'imagen2.jpg',
+    img: "https://webley.files.wordpress.com/2018/08/img_7190.jpg",
+    descripcion: "Este portafolio",
+    repoUrl: "https://github.com/Dan0227/Portafolio_react"
   },
   {
-    id: 3,
-    titulo: 'Proyecto 3',
-    descripcion: 'Descripción del Proyecto 3',
-    imagen: 'imagen3.jpg',
-  },
-  // Agrega más proyectos según sea necesario
+    img: "https://ps.w.org/b-slider/assets/icon-128x128.png?rev=2785255",
+    descripcion: "Un slider",
+    repoUrl: "https://github.com/Dan0227/slider"
+  }
 ];
 
-const Proyectos = () => {
+const Proyectos = ({ contador, setContador }) => {
+  const [proyectoActual, setProyectoActual] = useState(proyectosData[contador - 1]);
+
+  useEffect(() => {
+    setProyectoActual(proyectosData[contador - 1]);
+  }, [contador]);
+
+  const maxContador = proyectosData.length;
+
+  const handleIzquierda = () => {
+    if (contador > 1) {
+      setContador(contador - 1);
+    } else {
+      setContador(maxContador);
+    }
+  };
+
+  const handleDerecha = () => {
+    if (contador < maxContador) {
+      setContador(contador + 1);
+    } else {
+      setContador(1);
+    }
+  };
+
   return (
-    <div className="proyectos-slider">
-      <h2>Proyectos Destacados</h2>
-      <Carousel>
-        {proyectos.map((proyecto) => (
-          <div key={proyecto.id}>
-            <img src={proyecto.imagen} alt={proyecto.titulo} />
-            <p>{proyecto.titulo}</p>
-            <p>{proyecto.descripcion}</p>
-          </div>
-        ))}
-      </Carousel>
+    <div className="">
+      <div className="proyecto-container">
+        <div className="proyecto-info">
+          <img src={proyectoActual.img} className="img" alt={`Proyecto ${contador}`} />
+        </div>
+        <div className="proyecto-description">
+          <p>{proyectoActual.descripcion}</p>
+          <a className="linkk"href={proyectoActual.repoUrl} target="_blank" rel="noopener noreferrer">
+            Ver Repositorio en GitHub
+          </a>
+        </div>
+      </div>
+      <div className="proyecto-buttons">
+        <button className="izquierda" onClick={handleIzquierda}>←</button>
+        <button className="derecha" onClick={handleDerecha}>→</button>
+      </div>
     </div>
-  );
-};
+  )
+}
 
 export default Proyectos;

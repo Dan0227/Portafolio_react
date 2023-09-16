@@ -11,35 +11,28 @@ function NavigationMenu({ handlePage }) {
         </th>
         <th>
             <div className="ml2">
-                <a href="#" onClick={() => handlePage('inicio')}>
+                <a className="a2" href="#" onClick={() => handlePage('inicio')}>
                     Inicio
                 </a>
             </div>
         </th>
         <th>
             <div className="ml2">
-              <a href="#" onClick={() => handlePage('proyectos')}>
+              <a className="a2" href="#" onClick={() => handlePage('proyectos')}>
                 Proyectos
               </a>
             </div>
         </th>
         <th>
             <div className="ml2">
-                <a href="#" onClick={() => handlePage('acercaDe')}>
+                <a className="a2" href="#" onClick={() => handlePage('SobreMi')}>
                     Acerca de
                 </a>
             </div>
         </th>
         <th>
             <div className="ml2">
-                <a href="#" onClick={() => handlePage('acercaDe')}>
-                    Acerca de
-                </a>
-            </div>
-        </th>
-        <th>
-            <div className="ml2">
-                <a href="#" onClick={() => handlePage('contacto')}>
+                <a className="a2" href="#" onClick={() => handlePage('contacto')}>
                     Contacto
                 </a>
             </div>

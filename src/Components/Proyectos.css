@@ -1,0 +1,31 @@
+  .proyecto-info {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .proyecto-description {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .proyecto-buttons {
+    text-align: center;
+    margin-top: 1px;
+  }
+
+  .derecha {
+    height: 50px;
+    width: 100px;
+  }
+
+  .izquierda {
+    height: 50px;
+    width: 100px;
+  }
+
+  .img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }

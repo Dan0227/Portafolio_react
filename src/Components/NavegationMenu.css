@@ -16,7 +16,7 @@ nav {
     margin-right: 20px;
   }
 
-  a {
+  .a2 {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
@@ -26,44 +26,3 @@ nav {
   a:hover {
     color: #ffa65d;
   }
-
-
-
-    
-/* *{
-    margin: 0;
-    padding: 0;
-}
-
-.Enc{
-    background-color: rgb(0, 0, 0);
-}
-
-.letra{
-    font-family: "Edwardian Script ITC";
-    font-size: 100px;
-    margin-top: 20px;
-    margin-left: 50px;
-    color: rgb(255, 255, 255)   ;
-}
-
-.texthe{
-    color: rgb(255, 255, 255)   ;
-    text-decoration: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-}
-
-.ml1{
-    margin-left: 200px;
-    margin-top: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-}
-
-.ml2{
-    margin-left: 70px;
-    margin-top: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-} */

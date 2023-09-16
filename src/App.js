@@ -1,10 +1,10 @@
 import './App.css';
 import NavigationMenu from './Components/NavigationMenu';
 import Inicio from './Components/Inicio';
-import Proyectos from './Components/Proyectos';
 import SobreMi from './Components/SobreMi';
 import Contacto from './Components/Contacto';
 import React, { useState } from 'react';
+import { Home } from './Proy/Home';
 
 
 function App() {
@@ -21,9 +21,9 @@ function App() {
       currentSection = <Inicio />;
       break;
     case 'proyectos':
-      currentSection = <Proyectos />;
+      currentSection = <Home />;
       break;
-    case 'acercaDe':
+    case 'SobreMi':
       currentSection = <SobreMi />;
       break;
     case 'contacto':
